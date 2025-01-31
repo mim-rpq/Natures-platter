@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natures Platter</title>
+    <!-- Daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome      -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Sora google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Poppins google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Tailwind theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'green-primary': '#179800',
+                        'header-gradient': '#EFEBE3',
+                        'des-color': '#111111',
+                    },
+
+                    fontFamily: {
+                        poppins: ["Poppins", 'serif'],
+                        sora: ["Sora", 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-sora">
+    <!-- Header Start -->
+    <header class=" bg-gradient-to-t from-header-gradient to-white">
+        <!-- nav start  -->
+        <div class=" flex justify-between items-center container max-w-screen-xl mx-auto p-5 ">
+            <div class="">
+                <img class="hidden lg:block" src="images/logo-header.png" alt="">
+                <img class="lg:hidden" src="images/Group.png" alt="">
+            </div>
+
+            <div class="hidden lg:block">
+                <ul class="flex justify-center items-center gap-8 ">
+                    <li class="text-xl"><a>Product</a></li>
+                    <li class="text-xl"><a>Service</a></li>
+                    <li class="text-xl"><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:block">
+                <div class=" flex justify-center items-center gap-5 ">
+                    <div>
+                        <i class="fa-solid fa-cart-shopping text-xl "></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline font-medium px-7 text-xl">Login</button>
+                    </div>
+                    <div>
+                        <a class="btn bg-green-primary text-xl font-medium text-white px-6">Register</a>
+                    </div>
+                </div>
+
+            </div>
+            <i class="fa-solid fa-bars text-green-primary text-xl lg:hidden "></i>
+        </div>
+        <hr class="bg-green-primary mt-2 lg:hidden">
+        <!-- nav end -->
+
+        <!-- banner start  -->
+        <div class="lg:max-w-screen-xl mx-auto p-2">
+            <div class="text-center space-y-8 py-10">
+                <h1 class="lg:text-6xl text-4xl font-semibold">Freshness <span class="text-green-primary">You Can <br>
+                    Count </span> On, Prices You’ll Love!</h1>
+                <p class="text-des-color">Shop your daily essentials at unbeatable prices. From fresh produce to pantry  staples, <br> we’ve got you
+                    covered every day!</p>
+            </div>
+            <div class="flex justify-center">
+                <img src="images/hero-vegetables.png" alt="">
+            </div>
+        </div>
+        <!-- banner end  -->
+    </header>
+    <!-- Header End-->
+
+    <!-- Main Start  -->
+    <main>
+
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer>
+
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
