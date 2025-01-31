@@ -30,6 +30,7 @@
                         'green-primary': '#179800',
                         'header-gradient': '#EFEBE3',
                         'des-color': '#111111',
+                        'gray-secondary': '#EFEBE3',
                     },
 
                     fontFamily: {
@@ -45,7 +46,7 @@
 
 <body class="font-sora">
     <!-- Header Start -->
-    <header class=" bg-gradient-to-t from-header-gradient to-white">
+    <header class=" bg-gradient-to-t from-header-gradient to-white ">
         <!-- nav start  -->
         <div class=" flex justify-between items-center container max-w-screen-xl mx-auto p-5 ">
             <div class="">
@@ -83,11 +84,12 @@
         <!-- nav end -->
 
         <!-- banner start  -->
-        <div class="lg:max-w-screen-xl mx-auto p-2">
+        <div class="lg:max-w-screen-xl mx-auto p-2 pb-0">
             <div class="text-center space-y-8 py-10">
                 <h1 class="lg:text-6xl text-4xl font-semibold">Freshness <span class="text-green-primary">You Can <br>
-                    Count </span> On, Prices You’ll Love!</h1>
-                <p class="text-des-color">Shop your daily essentials at unbeatable prices. From fresh produce to pantry  staples, <br> we’ve got you
+                        Count </span> On, Prices You’ll Love!</h1>
+                <p class="text-des-color">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+                    staples, <br> we’ve got you
                     covered every day!</p>
             </div>
             <div class="flex justify-center">
@@ -99,8 +101,52 @@
     <!-- Header End-->
 
     <!-- Main Start  -->
-    <main>
+    <main class="container max-w-screen-xl mx-auto p-5 ">
+        <!-- service card section  -->
+        <section class="lg:mt-40 mt:10">
+            <h1 class="font-semibold text-green-primary text-4xl mb-12">Services</h1>
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="card bg-gray-secondary  ">
+                    <figure class="pt-8  ">
+                        <div class="bg-white  w-36 h-36 rounded-full flex justify-center items-center">
+                            <img class=" " src="images/service.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl pb-2">24/7 Services </h2>
+                        <p class="text-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
 
+                    </div>
+                </div>
+                <div class="card bg-gray-secondary  ">
+                    <figure class=" pt-8 ">
+                        <div class="bg-white  w-36 h-36 rounded-full flex justify-center items-center">
+                            <img class=" " src="images/delivery.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl pb-2">Fast Delivery </h2>
+                        <p class="text-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+
+                    </div>
+                </div>
+                <div class="card bg-gray-secondary  ">
+                    <figure class=" pt-8 ">
+                        <div class="bg-white  w-36 h-36 rounded-full flex justify-center items-center">
+                            <img class=" " src="images/healthy.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl pb-2">Healthy Products </h2>
+                        <p class="text-des-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Main End -->
     <!-- Footer Start -->
