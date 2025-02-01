@@ -46,9 +46,24 @@
 
                     backgroundImage: {
                         'discount-offer': "url('/images/vegetable-offer.png')"
-                    }
-                }
-            }
+                    },
+
+                    animation: {
+                        wiggle: " wiggle 5s ease-in-out infinite"
+                    },
+
+                    keyframes: {
+                        wiggle: {
+                            "75%, 100%": {
+                                transform: "scale(.9)",
+                                opacity: "25",
+                            },
+
+                            "50%": { transform: "rotate(6deg)" },
+                        },
+                    },
+                },
+            },
         }
     </script>
 
@@ -103,7 +118,7 @@
                     covered every day!</p>
             </div>
             <div class="flex justify-center">
-                <img src="images/hero-vegetables.png" alt="">
+                <img class="animate-wiggle" src="images/hero-vegetables.png" alt="">
             </div>
         </div>
         <!-- banner end  -->
@@ -111,9 +126,9 @@
     <!-- Header End-->
 
     <!-- Main Start  -->
-    <main class="">
+    <main class=" relative">
         <!-- service card section  -->
-        <section class="lg:my-40 my:10 container max-w-screen-xl mx-auto p-5 ">
+        <section class="lg:my-40 my:10 container max-w-screen-xl mx-auto p-5 lg:mt-0 mt-20 ">
             <h1 class="font-semibold text-green-primary text-4xl mb-12">Services</h1>
             <div class="flex flex-col lg:flex-row gap-6">
                 <div class="card bg-gray-secondary  ">
@@ -157,8 +172,8 @@
                 </div>
             </div>
         </section>
-        <!-- produc section start  -->
-        <section class=" bg-gray-secondary lg:py-40 py-5 ">
+        <!-- product section start  -->
+        <section class=" bg-gray-secondary lg:py-40 py-10 p-5 lg:mt-0 mt-20">
             <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Popular
                 Products</h1>
             <div class=" flex flex-col lg:flex-row gap-6 container max-w-screen-xl mx-auto   ">
@@ -170,7 +185,7 @@
                         <button class="bg-white py-3 px-8 rounded-lg font-semibold text-xl">Buy Now</button>
                     </div>
                     <div class="flex justify-self-end ">
-                        <img class="relative -top-20" src="images/vegetable-offer.png" alt="">
+                        <img class="relative -top-28 lg:-top-20" src="images/vegetable-offer.png" alt="">
                     </div>
                 </div>
                 <!-- product div  -->
@@ -300,40 +315,104 @@
         <!-- product section End -->
 
         <!-- discount offer start -->
-        <section class="lg:my-40 my-10 p-5">
-            <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Arrival & Offers</h1>
+        <section class="lg:mt-40 my-4 p-5  mt-20">
+            <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Arrival &
+                Offers</h1>
             <div class=" container max-w-screen-xl mx-auto flex lg:flex-row flex-col gap-5">
-              <div class="flex items-center justify-center bg-dawaat rounded-3xl gap-1 p-2 lg:gap-10 py-4 flex-1">
-                <div class="text-center space-y-6">
-                    <img src="images/daawat.png" alt="">
-                    <button class="btn bg-green-secondary border-0 text-white  lg:text-xl">Cook Exotic Dishes</button>
-                    <h2 class="font-poppins text-2xl lg:text-4xl text-white">UP to <span class="font-semibold">20% OFF</span></h2>
+                <div class="flex items-center justify-center bg-dawaat rounded-3xl gap-1 p-2 lg:gap-10 py-4 flex-1">
+                    <div class="text-center space-y-5 lg:space-y-8 w-1/2">
+                        <div class="flex justify-center">
+                            <img class="" src="images/daawat.png" alt="">
+                        </div>
+                        <button class="btn bg-green-secondary border-0 text-white  lg:text-xl">Cook Exotic
+                            Dishes</button>
+                        <h2 class="font-poppins text-2xl lg:text-4xl text-white">UP to <span class="font-semibold">20%
+                                OFF</span></h2>
+                    </div>
+                    <div class="w-1/2">
+                        <img src="images/dawat-mock-up.png" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="images/dawat-mock-up.png" alt="">
+                <div
+                    class="flex items-center justify-center bg-discount-blue-bg rounded-3xl gap-3 lg:gap-8 py-4 w-full  lg:w-[520px] ">
+                    <div class="text-center space-y-4">
+                        <img class="w-1/2" src="images/india-gate-logo.png" alt="">
+                        <button class="btn bg-discount-blue-btn border-0 text-white  lg:text-xl">Cook Exotic
+                            Dishes</button>
+                        <h2 class="font-poppins text-2xl lg:text-4xl text-white">UP to <span class="font-semibold">20%
+                                OFF</span></h2>
+                    </div>
+                    <div>
+                        <img class="w-3/4 lg:w-full" src="images/india-gate-mock-up.png" alt="">
+                    </div>
                 </div>
-              </div>
-              <div class="flex items-center justify-center bg-discount-blue-bg rounded-3xl gap-3 lg:gap-8 py-4 w-full lg:w-[520px]">
-                <div class="text-center space-y-6">
-                    <img src="images/india-gate-logo.png" alt="">
-                    <button class="btn bg-discount-blue-btn border-0 text-white  lg:text-xl">Cook Exotic Dishes</button>
-                    <h2 class="font-poppins text-2xl lg:text-4xl text-white">UP to <span class="font-semibold">20% OFF</span></h2>
-                </div>
-                <div>
-                    <img src="images/india-gate-mock-up.png" alt="">
-                </div>
-              </div>
+
             </div>
         </section>
+
+
+
         <!-- discount offer end  -->
 
+
+        <!-- clint section  -->
+        <section class=" lg:mt-0 mt-20">
+            <h1
+                class="text-green-primary text-4xl font-semibold p-5 lg:p-0 container max-w-screen-xl mx-auto mt-12 lg:mt-32">
+                What Our Clint Say's</h1>
+            <div class="lg:bg-[url('../images/veges.png')] bg-no-repeat bg-center bg-cover p-5  lg:py-32 mt-12">
+                <div class="container max-w-screen-xl mx-auto gap-20 lg:gap-7 flex lg:flex-row flex-col">
+                    <div class="bg-gray-secondary relative rounded-lg">
+                        <div class="">
+                            <img class="w-20 h-20 rounded-full relative -top-10 left-6" src="images/download (1).jpg"
+                                alt="">
+                        </div>
+                        <div class="text-center p-5">
+                            <em>" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ipsam autem sunt non
+                                illo, iste voluptatibus quo quas, ullam culpa nam. Sapiente distinctio expedita ex
+                                quibusdam at veniam, adipisci hic."</em>
+
+                            <h2 class="text-green-primary">Avinash Kr</h2>
+                        </div>
+                    </div>
+                    <div class="bg-gray-secondary relative rounded-lg">
+                        <div class="">
+                            <img class="w-20 h-20 rounded-full relative -top-10 left-6" src="images/download (2).jpg"
+                                alt="">
+                        </div>
+                        <div class="text-center p-5">
+                            <em>" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ipsam autem sunt non
+                                illo, iste voluptatibus quo quas, ullam culpa nam. Sapiente distinctio expedita ex
+                                quibusdam at veniam, adipisci hic."</em>
+
+                            <h2 class="text-green-primary">-Avinash Kr</h2>
+                        </div>
+                    </div>
+                    <div class="bg-gray-secondary relative rounded-lg">
+                        <div class="">
+                            <img class="w-20 h-20 rounded-full relative -top-10 left-6" src="images/download.jpg"
+                                alt="">
+                        </div>
+                        <div class="text-center p-5">
+                            <em>" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ipsam autem sunt non
+                                illo, iste voluptatibus quo quas, ullam culpa nam. Sapiente distinctio expedita ex
+                                quibusdam at veniam, adipisci hic."</em>
+
+                            <h2 class="text-green-primary">Avinash Kr</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials end -->
         <!-- news section start -->
-        <section>
-            <div class="flex gap-4 items-center  lg:gap-32 container max-w-screen-xl mx-auto justify-center bg-gray-secondary rounded-3xl py-5 lg:py-12">
+        <section class="relative -bottom-40 lg:-bottom-56  lg:mx-0 mx-6 lg:mt-0 mt-20">
+            <div
+                class="flex flex-col lg:flex-row gap-4 items-center  lg:gap-32 container max-w-screen-xl mx-auto justify-center bg-gray-secondary rounded-3xl py-5 lg:py-14">
                 <div>
                     <img src="images/vegetable-busket.png" alt="">
                 </div>
-                <div class="space-y-6">
+                <div class="space-y-6 lg:text-left text-center p-2">
                     <h2 class="text-4xl font-semibold">Get Grocery News!</h2>
                     <p>Exclusive training tips, ticks, product deals and more.</p>
                     <input type="text" placeholder="Enter email...." class="input  w-full max-w-xs" />
@@ -341,14 +420,39 @@
                 </div>
             </div>
         </section>
-       
+
+
         <!-- news section end  -->
     </main>
     <!-- Main End -->
     <!-- Footer Start -->
-    <footer>
-        
+    <footer class=" bg-green-primary lg:pb-20 pt-72">
+        <div class="grid  lg:grid-cols-4 gap-16 p-2 lg:gap-40 container max-w-screen-xl mx-auto">
+            <div class=" lg:col-span-2 text-gray-secondary space-y-4">
+                <img src="images/logo-footer.png" alt="">
+                <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+            </div>
+            <div class="text-gray-secondary">
+                <nav class="flex flex-col gap-4">
+                    <a class="link link-hover">Product</a>
+                    <a class="link link-hover">Service</a>
+                    <a class="link link-hover">contact Us</a>
+                </nav>
+            </div>
+            <div class="text-gray-secondary space-y-3 lg:pl-12">
+                <div class="">
+                    <h2>Follow Us</h2>
+                    <div class="flex gap-5 text-2xl">
+                        <i class=" text-2xl fa-brands fa-facebook"></i>
+                        <i class=" text-2xl fa-brands fa-instagram"></i>
+                        <i class=" text-2xl fa-brands fa-linkedin"></i>
+                        <i class=" text-2xl fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <!-- Footer End -->
 </body>
 
