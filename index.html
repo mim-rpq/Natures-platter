@@ -33,6 +33,10 @@
                         'gray-secondary': '#EFEBE3',
                         'gradient-secondary': '#89e781',
                         'rating': '#FFC107',
+                        'dawaat': '#115414',
+                        'green-secondary': '#63B76D',
+                        'discount-blue-bg': '#102861',
+                        'discount-blue-btn': '#2A4D97',
                     },
 
                     fontFamily: {
@@ -40,8 +44,8 @@
                         sora: ["Sora", 'serif']
                     },
 
-                    backgroundImage:{
-                        'discount-offer':"url('/images/vegetable-offer.png')"
+                    backgroundImage: {
+                        'discount-offer': "url('/images/vegetable-offer.png')"
                     }
                 }
             }
@@ -154,19 +158,20 @@
             </div>
         </section>
         <!-- produc section start  -->
-         <section class=" bg-gray-secondary lg:py-40  ">
-            <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Popular Products</h1>
+        <section class=" bg-gray-secondary lg:py-40  ">
+            <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Popular
+                Products</h1>
             <div class=" flex flex-col lg:flex-row gap-6 container max-w-screen-xl mx-auto   ">
                 <!-- discount div  -->
                 <div class=" h-[418px] bg-gradient-to-tl from-gradient-secondary to-green-primary rounded-lg ">
-                  <div class="p-8 space-y-4">
-                    <h2 class="text-4xl text-white font-bold"><span class="text-gray-secondary">30</span>% off</h2>
-                    <p class="text-xl">Discover a world of treat's, toys, and <br> essentials handpicked for</p>
-                    <button class="bg-white py-3 px-8 rounded-lg font-semibold text-xl">Buy Now</button>
-                  </div>
-                  <div class="flex justify-self-end ">
-                    <img class="relative -top-20" src="images/vegetable-offer.png" alt="">
-                  </div>
+                    <div class="p-8 space-y-4">
+                        <h2 class="text-4xl text-white font-bold"><span class="text-gray-secondary">30</span>% off</h2>
+                        <p class="text-xl">Discover a world of treat's, toys, and <br> essentials handpicked for</p>
+                        <button class="bg-white py-3 px-8 rounded-lg font-semibold text-xl">Buy Now</button>
+                    </div>
+                    <div class="flex justify-self-end ">
+                        <img class="relative -top-20" src="images/vegetable-offer.png" alt="">
+                    </div>
                 </div>
                 <!-- product div  -->
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 px-2 lg:px-0 lg:gap-5 flex-1">
@@ -287,12 +292,37 @@
                             <h3 class="font-semibold">$39.99</h3>
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
-         </section>
+        </section>
         <!-- produc section End -->
+        <section class="lg:my-40 my:10 p-5">
+            <h1 class="text-green-primary text-4xl font-semibold mb-12  container max-w-screen-xl mx-auto">Arrival & Offers</h1>
+            <div class=" container max-w-screen-xl mx-auto flex lg:flex-row flex-col gap-5">
+              <div class="flex items-center justify-center bg-dawaat rounded-3xl gap-10 py-4 flex-1">
+                <div class="text-center space-y-6">
+                    <img src="images/daawat.png" alt="">
+                    <button class="btn bg-green-secondary border-0 text-white text-xl">Cook Exotic Dishes</button>
+                    <h2 class="font-poppins text-4xl text-white">UP to <span class="font-semibold">20% OFF</span></h2>
+                </div>
+                <div>
+                    <img src="images/dawat-mock-up.png" alt="">
+                </div>
+              </div>
+              <div class="flex items-center justify-center bg-discount-blue-bg rounded-3xl gap-8 py-4 w-full lg:w-[520px]">
+                <div class="text-center space-y-6">
+                    <img src="images/india-gate-logo.png" alt="">
+                    <button class="btn bg-discount-blue-btn border-0 text-white text-xl">Cook Exotic Dishes</button>
+                    <h2 class="font-poppins text-4xl text-white">UP to <span class="font-semibold">20% OFF</span></h2>
+                </div>
+                <div>
+                    <img src="images/india-gate-mock-up.png" alt="">
+                </div>
+              </div>
+            </div>
+        </section>
     </main>
     <!-- Main End -->
     <!-- Footer Start -->
